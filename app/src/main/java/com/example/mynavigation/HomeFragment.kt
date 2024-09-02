@@ -26,9 +26,10 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnCategory.setOnClickListener {
+        binding.btnCategory.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_categoryFragment)
-        }
+        )
+
 
         binding.btnProfile.setOnClickListener { v ->
             v.findNavController().navigate(R.id.action_homeFragment_to_profileActivity)

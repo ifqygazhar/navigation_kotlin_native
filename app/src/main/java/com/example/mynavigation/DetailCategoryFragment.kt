@@ -31,9 +31,7 @@ class DetailCategoryFragment : Fragment() {
         binding.tvCategoryName.text = dataName
         binding.tvCategoryDescription.text = "Stock : $dataDescription"
 
-        binding.btnHome.setOnClickListener {
-            Navigation.createNavigateOnClickListener(R.id.action_detailCategoryFragment_to_homeFragment)
-        }
+        binding.btnHome.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_detailCategoryFragment_to_homeFragment))
     }
 
     override fun onDestroy() {
